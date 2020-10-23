@@ -9,30 +9,35 @@
 </head>
 <body>
   <div class="page">
-    <form action="/" method="post">
-    <div class="container">
-      <header>
-        <nav><a href="#">Sign in</a>
-          <a href="#">Join us</a>
-        </nav>
-       </header>
-        <label>Username
-          <input type="text" name="username">
-        </label>
-        <label>Password
-          <input type="password" name="password">
-        </label>
-        <label>
-          <input type="checkbox" name="Keep me signed in" value="Keep me signed in" checked> Keep me signed in
-        </label>
+    <div class="bg_form">
+      <form action="/" method="post">
+        <div class="container">
+          <header>
+            <nav><a href="#">Sign in</a>
+              <a href="#">Join us</a>
+            </nav>
+          </header>
+          <!-- Username -->
+          <label for="Username">Username</label>
+            <input type="text" name="username" id="Username">
+            <!-- password -->
+          <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <!-- checkbox -->
+          <label class="label_checkbox">
+            <input class="checkbox" type="checkbox" name="Keep me signed in" value="Keep me signed in" checked> 
+            <span class="another_checkbox"></span>
+            <span class="text_checkbox">Keep me signed in</span>
+          </label>
+          <!-- button -->
+         <button type="submit">Sign in</button>
+          <footer>
+            <a href="#">Forgot password</a>
+            <a href="#">Create an account</a>
+          </footer>
+        </div>
+      </form> 
     </div>
-       </header>
-       <button>Sign in</button>
-       <footer>
-         <a href="#">Forgot password</a>
-         <a href="#">Create an account</a>
-       </footer>
-  </form> 
   </div>
 </body>
 </html>
